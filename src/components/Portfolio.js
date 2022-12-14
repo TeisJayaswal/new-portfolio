@@ -7,7 +7,7 @@ import Popcorn from "../images/popcornsample.png";
 const Portfolio = () => {
   return (
     <>
-      <div className="section project">
+      <div id="portfolio" className="section project">
         <div className="title">Portfolio</div>
         <div className="singleproject">
           <div className="imageunion">
@@ -16,10 +16,9 @@ const Portfolio = () => {
               <span>Built with: Javascript, HTML, CSS and Wordpress API</span>
               <div>
                 A consumer-facing video streaming website created for a media
-                startup in Chicago. Built using Javascript plus Wordpress API to
-                manage video library. Published using Netlify. With over 66% of
-                traffic coming on mobile, web site is built with mobile
-                responsive design.
+                startup in Chicago. With over 66% of traffic coming on mobile,
+                website is built with mobile responsive design. Published using
+                Netlify.
               </div>
               <div className="links">
                 <a href="https://imageunion.tv/">Live Site ↗</a>
@@ -86,7 +85,7 @@ const Portfolio = () => {
             <div className="project-text">
               <span>Built with: React</span>
               <div className="links">
-                <a href="https://github.com/TeisJayaswal/popcorn-social">
+                <a href="https://github.com/TeisJayaswal/new-portfolio">
                   Code ↗
                 </a>
               </div>

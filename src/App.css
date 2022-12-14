@@ -15,19 +15,15 @@
 /* navigation bar */
 
 nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 300px;
-  background-color: #333;
+  width: 80vw;
   color: #fff;
+  font-family: 'Montserrat', serif;
   /* padding: 1rem; */
 }
 
 nav ul {
+  float: right;
   display: flex;
-  flex-direction: column;
   /* align-items: ce; */
   list-style: none;
   margin: 0;
@@ -35,32 +31,9 @@ nav ul {
   padding: 0;
 }
 
-nav h2 {
-  font-size: 2vw;
-  text-align: left;
-}
 
-.nav-image {
-  width: 80%;
-}
 
-nav ul li {
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  font-size: 1.2vw;
-  font-weight: 700;
-}
 
-nav ul li:hover {
-  filter: brightness(80%);
-}
-
-nav ul li img{
-  width: 2vw;
-  height: 2vw;
-  filter: invert(100%);
-}
 
 nav a {
   color: #fff;
@@ -69,6 +42,19 @@ nav a {
   padding: 0.5rem 1rem;
 }
 
+nav button {
+  font-size: 1.1em;
+  border: none;
+  font-family: 'Montserrat', serif;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+nav a:hover {
+  filter: brightness(80%);
+  animation: spin ease .8s forwards 0s;
+}
 
 
 .banner {
@@ -167,7 +153,9 @@ nav a {
 
 .about .title,
 .about .about-text,
-.project .title {
+.project .title,
+.contact .title,
+.contact .contact-text {
   width: 100%;
   margin: 0;
   padding-left: 5vw;
@@ -176,19 +164,22 @@ nav a {
 }
 
 .about .title,
-.project .title {
+.project .title,
+.contact .title {
   font-size: 3vw;
 }
 
 
-.about .about-text {
+.about .about-text,
+.contact .contact-text {
   width: 100%;
   margin-top: 2vh;
   color: white;
   line-height: 2.3vh;
 }
 
-.about-text p {
+.about-text p,
+.contact-text p {
   max-width: 75vw;
 }
 
@@ -219,7 +210,8 @@ nav a {
   font-size: 1.3vw;
   color: antiquewhite;
 }
-.skill-box .images{
+.skill-box .images,
+.contact .images {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -227,6 +219,7 @@ nav a {
   flex-wrap: wrap;
   /* border: 1px solid antiquewhite; */
 }
+
 
 .skill-box .images img {
   width: 4vw;
@@ -341,3 +334,158 @@ nav a {
 
 }
 
+.contact .imagecaption {
+  width: 5vw;
+  height: 5vw;
+}
+.images .contact-logo {
+  width: 3vw;
+  filter: invert(100%);
+}
+
+.soundcloud-player {
+  margin-top: 3vh;
+  width: 40vw !important;
+  height: 500px !important;
+  padding-bottom: 1vw;
+  padding-right: 1vw;
+  border-bottom: 2px rgba(250, 235, 215, 0.653) dotted;
+  border-right: 2px rgba(250, 235, 215, 0.653) dotted;
+}
+
+.footer {
+  margin-top: 3vh;
+  width: 100vw;
+  height: 6vh;
+  color: antiquewhite;
+}
+
+
+@media screen and (max-width: 414px) {
+  nav {
+    display: none;
+  }
+  .banner span {
+    color: antiquewhite;
+    width: 60%;
+  }
+
+  .banner .title {
+    text-align: left;
+    font-size: 8vw;
+  }
+
+  .tj_logo {
+    width: 25vw;
+    height: 25vw;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    z-index: 1;
+  }
+  
+  .wavy {
+    position: absolute;
+    opacity: 20%;
+    z-index: 0;
+    width: 65%;
+    margin-top: -8vh;
+    margin-right: 10vw;
+  }
+
+  .skill-title {
+    font-size: 4.8vw;
+    color: antiquewhite;
+  }
+
+  .about .title,
+  .project .title,
+  .contact .title {
+  font-size: 7vw;
+  }
+
+  .about .about-text,
+  .contact .contact-text {
+  width: 100%;
+  margin-top: 2vh;
+  color: white;
+  line-height: 4vh;
+  }
+
+  .about-text p,
+  .contact-text p {
+  max-width: 95vw;
+  }
+
+
+  .skill-box .images img {
+    width: 13vw;
+    height: auto;
+    padding: 5px;
+  }
+
+  .imagecaption {
+    width: 27vw;
+    height: 27vw;
+    display: flex;
+    font-size: smaller;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted antiquewhite;
+  }
+
+  .singleproject {
+    width: 75vw;
+    margin-top: 3vh;
+    /* padding-left: 5vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 4vh;
+    gap: 3vw;
+  }
+
+  .project h4 {
+    padding: 5px;
+    font-size: 5.5vw;
+    text-align: left;
+    color: antiquewhite;
+    /* width: 70%; */
+    /* background-color: antiquewhite; */
+    margin: 0;
+  }
+
+  .project .project-image {
+    width: 65vw;
+    align-self: flex-end;
+    height: auto;
+  }
+
+  .contact .imagecaption {
+    width: 14vw;
+    height: 14vw;
+  }
+  .images .contact-logo {
+    width: 10vw;
+    filter: invert(100%);
+  }
+  
+  .soundcloud-player {
+    margin-top: 3vh;
+    width: 80vw !important;
+    height: 300px !important;
+    padding-bottom: 1vw;
+    padding-right: 1vw;
+    border-bottom: 2px rgba(250, 235, 215, 0.653) dotted;
+    border-right: 2px rgba(250, 235, 215, 0.653) dotted;
+  }
+
+  .skills {
+    align-items: center;
+  }
+  
+  .skill-title {
+    align-self: center;
+  }
+}

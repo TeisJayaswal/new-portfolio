@@ -1,22 +1,38 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Home from "../images/home.png"
-import Contact from "../images/contact.png"
-import Profile from "../images/profile.png"
-import ComputerTJ from "../images/tj-computer.png"
+import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function NavBar() {
   return (
-    <nav>
-      <ul>
-        <img className="nav-image" alt="computer" src={ComputerTJ} />
-        <h2>Teis Jayaswal</h2>
-        <li><img alt="home" src={Home}/><Link to="/">HOME</Link></li>
+    <>
+      <nav id="navigation" className="slideDownLater">
+        <ul>
+          <li>
+            <AnchorLink href="#home">
+              <button>HOME</button>
+            </AnchorLink>
+          </li>
 
-        <li><img alt="home" src={Profile}/><Link to="/about">PORTFOLIO</Link></li>
+          <li>
+            <AnchorLink href="#about">
+              <button>ABOUT</button>
+            </AnchorLink>
+          </li>
 
-        <li><img alt="home" src={Contact}/><Link to="/contact">CONTACT</Link></li>
-      </ul>
-    </nav>
+          <li>
+            <AnchorLink href="#portfolio">
+              <button>PORTFOLIO</button>
+            </AnchorLink>
+          </li>
+
+          <li>
+            <li>
+              <AnchorLink href="#contact">
+                <button>CONTACT</button>
+              </AnchorLink>
+            </li>{" "}
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 }

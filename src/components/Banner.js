@@ -4,7 +4,7 @@ import Wavy from "../images/wavy.png";
 const Banner = () => {
   return (
     <>
-      <div className="banner">
+      <div id="home" className="banner">
         <img
           src={ComputerTJ}
           alt="computer"

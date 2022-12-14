@@ -4,6 +4,7 @@ import "./App.css";
 import About from "./components/About";
 import Banner from "./components/Banner";
 import ContactPage from "./components/Contact";
+import Footer from "./components/Footer";
 import NavBar from "./components/Nav";
 import Portfolio from "./components/Portfolio";
 
@@ -17,13 +18,16 @@ function App() {
             path={"/"}
             element={
               <>
+                <NavBar />
                 <Banner />
                 <About />
                 <Portfolio />
+                <ContactPage />
+                <Footer />
               </>
             }
           />
-          <Route path={"/contact"} element={<ContactPage />} />
+          <Route exact path={"/about"} component={About} />
         </Routes>
       </BrowserRouter>
     </div>

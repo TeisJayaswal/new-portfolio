@@ -4,17 +4,26 @@ import Netlify from "../images/netlify.svg";
 const About = () => {
   return (
     <>
-      <div className="section about">
+      <div id="about" className="section about">
         <div className="title">About</div>
         <div className="about-text">
+          <p>Hi! I’m Teis Jayaswal, a self-taught web developer.</p>
           <p>
-            Hi! I’m Teis Jayaswal, a web developer. I grew up in Portland, OR
-            and graduated from The University of Chicago. After graduating, I
-            joined a video startup called ImageUnion and helped to guide the
-            company from concept to launch. I started programming and really
-            enjoy the level of problem-solving and creativity that web
-            development involves. When I'm not programming, you might find me
-            baking, reading, making music or hanging out with dogs.
+            I grew up in Portland, OR and graduated from The University of
+            Chicago in 2021. After graduation, I joined a video startup called
+            ImageUnion and helped to guide the company from concept to launch. I
+            also started programming and was immediately drawn to the level of
+            problem-solving and creativity that web development combines. I'm
+            highly motivated to join an awesome startup and put my skills and
+            energy into building something great.
+          </p>
+          <p>
+            When I'm not programming, you'll probably find me reading, baking,
+            making music or hanging out with dogs.
+          </p>
+
+          <p>
+            <b>Currently my tech stack includes the following: </b>
           </p>
         </div>
         <div className="skills">
