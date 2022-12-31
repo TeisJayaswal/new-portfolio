@@ -46,6 +46,11 @@ const About = () => {
                 <div>JAVASCRIPT</div>
               </div>
               <div className="imagecaption">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
+
+                <div>TYPESCRIPT</div>
+              </div>
+              <div className="imagecaption">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
 
                 <div>REACT</div>

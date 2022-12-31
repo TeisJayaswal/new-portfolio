@@ -3,6 +3,7 @@ import React from "react";
 import IMUPIC from "../images/awkward-imu.png";
 import JobSearch from "../images/job-search-whole.png";
 import Popcorn from "../images/popcornsample.png";
+import Refresh from "../images/auto_refresh.png";
 
 const Portfolio = () => {
   return (
@@ -78,6 +79,31 @@ const Portfolio = () => {
             </div>
           </div>
           <img className="project-image" src={Popcorn} />
+        </div>
+        <div className="singleproject">
+          <div className="imageunion">
+            <h4>
+              Auto Refresh Chrome Extension with Text Alerts (in progress)
+            </h4>
+            <div className="project-text">
+              <span>
+                Built with: NodeJS, Express, MongoDB, Stripe API, Twilio API,
+                JSON Web Token, Javascript, HTML, EJS, and CSS{" "}
+              </span>
+              <div>
+                This Chrome extension allows users to search for specific words
+                on specific websites and receive notifications when they are
+                found. The basic version of the extension sends notifications
+                within Chrome, while the paid version integrates the Twilio API
+                to send text message alerts to users. The project uses the
+                Stripe API to handle subscription and payment management.
+              </div>
+              {/* <div className="links">
+                <a href="https://imageunion.tv/">Live Site ↗</a>
+              </div> */}
+            </div>
+          </div>
+          <img className="project-image" src={Refresh} />
         </div>
         <div className="singleproject popcorn-project">
           <div className="popcorn">
