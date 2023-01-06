@@ -10,11 +10,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 /* navigation bar */
 
 nav {
+  padding-top: 10px;
   width: 80vw;
   color: #fff;
   font-family: 'Montserrat', serif;
